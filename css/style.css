@@ -172,9 +172,11 @@
     background-color: black;
 }
 .box-col{
-    background-color: red;
+    /* background-color: red; */
     width: 384px;
-    height: 200px;
-    border: solid;
-    flex-wrap: wrap;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
