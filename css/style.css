@@ -170,6 +170,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: black;
+    position: relative;
 }
 .box-col{
     /* background-color: red; */
