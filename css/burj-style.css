@@ -1,0 +1,20 @@
+.blog-entrance{
+    font-family: 'Lora', serif;
+    margin-left: 2%;
+    background-color: transparent;
+}
+.back-img{
+    background-image: url(../assets/img/burj-khalifa2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    opacity: 1;
+}
+.titles{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.blog-entrance p{
+    text-align: left;
+}
