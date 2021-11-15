@@ -271,7 +271,9 @@
             >
               <h5 class="card-title">Golden Gate, San Francisco</h5>
               <p class="card-text">
-                Cómo no hablar de nuestra primera obra, la cual nos resultó extremadamente fácil a pesar de que todavía se veía en blanco y negro
+                Cómo no hablar de nuestra primera obra, la cual nos resultó
+                extremadamente fácil a pesar de que todavía se veía en blanco y
+                negro
               </p>
               <a
                 href="https://blog.structuralia.com/la-construccion-del-puente-golden-gate"
@@ -308,7 +310,8 @@
             >
               <h5 class="card-title">Empire State, New York</h5>
               <p class="card-text">
-                Siempre la seguridad ante todo, porque eso nos define como empresar líder en el mundo (de Tucumán al mundo)
+                Siempre la seguridad ante todo, porque eso nos define como
+                empresar líder en el mundo (de Tucumán al mundo)
               </p>
               <a
                 href="https://www.1833ganaste.com/la-prevencion-de-riesgos-en-la-construccion-del-empire-state-building-su-verdadera-historia/"
@@ -344,7 +347,102 @@
           <!-- FIN PAGINACION -->
         </div>
         <!-- FIN DE COLUMNAS - SEBA -->
-        <div class="box-col"></div>
+        <!-- COMIENZO COLUMNA 2 -->
+        <div class="box-col">
+          <div class="box-col-22">
+            <!-- COMIENZO FORMULARIO DE BUSQUEDA -->
+            <form class="d-flex mt-4 me-4">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="
+                  btn btn-outline-success
+                  text-light
+                  border-light
+                  btn-search
+                "
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+            <!-- FIN FORMULARIO DE BUSQUEDA -->
+            <!-- COMIENZO LISTA DE CATEGORÍAS -->
+            <div class="dropdown me-4">
+              <button
+                class="btn btn-light dropdown-toggle my-5 categ-btn"
+                type="button"
+                id="dropdownMenuButton2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Lista de Categorías del blog
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton2"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Construcciones en Altura</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Puentes</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos viales</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Proyectos Hidráulicos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Proyectos Internacionales</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Oportunidades de Inversión</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- FIN DE LISTA DE CATEGORÍAS -->
+            <!-- COMIENZO PUBLICIDAD -->
+            <div class="video-box">
+              <div id="muteYouTubeVideoPlayer"></div>
+              <script async src="https://www.youtube.com/iframe_api"></script>
+              <script>
+                function onYouTubeIframeAPIReady() {
+                  var player;
+                  player = new YT.Player("muteYouTubeVideoPlayer", {
+                    videoId: "PzT5_EQkpOk", // El ID del video de Youtube
+                    width: 383, // Ancho del reproductor (en px)
+                    height: 313.47, // Alto del reproductor (en px)
+                    playerVars: {
+                      autoplay: 1, // Auto-play cuando la página cargue
+                      controls: 1, // Mostrar los botones de pause/play en el reproductor
+                      showinfo: 0, // Esconder el titulo del vídeo
+                      modestbranding: 1, // Esconder el logo de YouTube
+                      loop: 1, // Reproducir el vídeo en bucle
+                      fs: 0, // Esconder el botón de mostrar en pantalla completa
+                      cc_load_policy: 0, // Escoder los subtitulos que se muestran por defecto
+                      iv_load_policy: 3, // Escoder las anotaciones que se muestran por defecto
+                      autohide: 0, // Esconder los controles del vídeo cuando se esté reproduciendo
+                    },
+                    events: {
+                      onReady: function (e) {
+                        e.target.mute();
+                      },
+                    },
+                  });
+                }
+              </script>
+            </div>
+            <!-- FIN PUBLICIDAD -->
+          </div>
+        </div>
+        <!-- FIN COLUMNA 2 -->
       </div>
       <!-- FIN DE COLUMNAS - SEBA -->
     </main>

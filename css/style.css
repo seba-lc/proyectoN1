@@ -177,6 +177,30 @@
     /* border: solid; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    align-self: flex-start;
+}
+.btn-search:hover{
+    background: #CECECE;
+    background: -moz-radial-gradient(center, #CECECE 0%, #D0CEDB 50%, #F5FFF2 100%);
+    background: -webkit-radial-gradient(center, #CECECE 0%, #D0CEDB 50%, #F5FFF2 100%);
+    background: radial-gradient(ellipse at center, #CECECE 0%, #D0CEDB 50%, #F5FFF2 100%);;
+}
+.categ-btn{
+    align-self: ;
+}
+.box-col-22{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+@media screen and (max-width: 767px){
+    .box-col-22{
+        align-items: center;
+    }
+    .video-box{
+        display: none;
+    }
 }
