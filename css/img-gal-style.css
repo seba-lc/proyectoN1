@@ -1,0 +1,43 @@
+.img-box-gal{
+    height: 120px;
+}
+.img-gal{
+    width: 200px;
+    height: 100px;
+    background-image: url(https://picsum.photos/100/200);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+.description-img{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.img-gal:hover{
+    transform: scale(1.1);
+}
+.description-img:hover{
+    opacity: 0.6;
+    outline: 3px groove #7A7252;
+    outline-offset: 0px;
+    -webkit-box-shadow: 2px 2px 11px 2px rgba(0,0,0,0.99); 
+    box-shadow: 2px 2px 11px 2px rgba(0,0,0,0.99);
+}
+.img-gal-sec{
+    background: #545454;
+    background: -moz-radial-gradient(center, #545454 0%, #707070 21%, #FFFFFF 100%);
+    background: -webkit-radial-gradient(center, #545454 0%, #707070 21%, #FFFFFF 100%);
+    background: radial-gradient(ellipse at center, #545454 0%, #707070 21%, #FFFFFF 100%);
+}
