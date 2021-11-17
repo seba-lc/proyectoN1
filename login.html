@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in</title>
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="http://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Oswald&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- COMIENZO DEL NAV - SEBA -->
+    <nav class="navbar nav-home navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/img/logo-schaffen.jpg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Schaffen
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <!-- COMIENZO DEL MODAL -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn nav-link active btn-newsletter-home"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Newsletter
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Newsletter
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- COMIENZO FORM NEWS - SEBA -->
+                    <form class="mx-5 my-3">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="user-name" class="form-label">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="user-name"
+                        />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck1"
+                        />
+                        <label class="form-check-label" for="exampleCheck1"
+                          >Deseo recibir información relacionada a mi
+                          correo</label
+                        >
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        Enviar información
+                      </button>
+                    </form>
+                    <!-- FIN FORM NEWS -->
+                  </div>
+                </div>
+              </div>
+              <!-- FIN DEL MODAL -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN DEL NAV - SEBA -->
+    <main>
+      <!-- COMIENZO FORMULARIO - SEBA -->
+      <section class="login-form">
+        <div class="box1">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Dirección de Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                Nunca compartiremos tu información de usuario con nadie.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-2 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label pb-0" for="exampleCheck1"
+                >Mantener sesión iniciada</label
+              >
+            </div>
+            <!-- COMIENZO DEL MODAL -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn nav-link active btn-newsletter-home ps-0 mb-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              ¿Olvidaste tu contraseña?
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">
+                      Recupera tu cuenta
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <!-- COMIENZO FORM RECUPERACIÓN - SEBA -->
+                  <form class="mx-5 my-3">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="user-name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="user-name" />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Deseo recibir información relacionada a mi
+                        correo</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Enviar información
+                    </button>
+                  </form>
+                  <!-- FIN FORM NEWS -->
+                </div>
+              </div>
+            </div>
+            <!-- FIN DEL MODAL -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Iniciar Sesión
+            </button>
+          </form>
+          <a href="#" class="text-login text-dark"><div class="box-logins py-2">
+            <div class="box-login-shadow py-2"></div>
+            <div class="icon-logs border">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.64 12.2c0-.63-.06-1.25-.16-1.84H12v3.49h4.84a4.14 4.14 0 0 1-1.8 2.71v2.26h2.92a8.78 8.78 0 0 0 2.68-6.62z"
+                  fill="#4285F4"
+                ></path>
+                <path
+                  d="M12 21a8.6 8.6 0 0 0 5.96-2.18l-2.91-2.26a5.4 5.4 0 0 1-8.09-2.85h-3v2.33A9 9 0 0 0 12 21z"
+                  fill="#34A853"
+                ></path>
+                <path
+                  d="M6.96 13.71a5.41 5.41 0 0 1 0-3.42V7.96h-3a9 9 0 0 0 0 8.08l3-2.33z"
+                  fill="#FBBC05"
+                ></path>
+                <path
+                  d="M12 6.58c1.32 0 2.5.45 3.44 1.35l2.58-2.59A9 9 0 0 0 3.96 7.95l3 2.34A5.36 5.36 0 0 1 12 6.58z"
+                  fill="#EA4335"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-box">Inicia sesión con Google</div>
+          </div></a>
+          <a href="#" class="text-login text-dark"><div class="box-logins py-2">
+            <div class="box-login-shadow py-2"></div>
+            <div class="icon-logs border">
+              <svg
+                fill="none"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.5 12.058c0-5.28-4.253-9.558-9.5-9.558s-9.5 4.279-9.5 9.558c0 4.771 3.473 8.725 8.016 9.442v-6.68H8.104v-2.762h2.412V9.952c0-2.395 1.417-3.718 3.588-3.718 1.04 0 2.126.186 2.126.186v2.352h-1.198c-1.18 0-1.548.738-1.548 1.494v1.792h2.635l-.421 2.763h-2.214V21.5c4.543-.717 8.016-4.67 8.016-9.442z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-box">Inicia sesión con Facebook</div>
+          </div></a>
+          <a href="#" class="text-login text-dark"><div class="box-logins py-2">
+            <div class="box-login-shadow py-2"></div>
+            <div class="icon-logs border">
+              <svg
+                fill="none"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19.644 17.365a11.555 11.555 0 0 1-1.085 2.03c-.57.847-1.038 1.433-1.398 1.758-.558.534-1.156.808-1.797.823-.46 0-1.014-.136-1.659-.412-.647-.275-1.242-.411-1.786-.411-.571 0-1.183.136-1.838.411-.655.276-1.183.42-1.587.434-.614.027-1.226-.254-1.837-.845-.39-.354-.878-.96-1.462-1.82-.627-.918-1.142-1.982-1.546-3.195C3.217 14.828 3 13.558 3 12.33c0-1.408.292-2.621.878-3.639a5.26 5.26 0 0 1 1.838-1.934 4.802 4.802 0 0 1 2.485-.73c.488 0 1.127.157 1.922.466.793.31 1.302.466 1.525.466.166 0 .732-.184 1.69-.55.907-.339 1.671-.48 2.298-.424 1.698.143 2.974.84 3.822 2.094-1.518.957-2.27 2.298-2.255 4.019.014 1.34.481 2.455 1.4 3.34.415.41.88.728 1.397.954-.112.338-.23.662-.356.973zM15.749 1.42c0 1.05-.368 2.031-1.103 2.939-.887 1.079-1.96 1.702-3.124 1.604a3.406 3.406 0 0 1-.023-.398c0-1.008.422-2.087 1.17-2.97a4.53 4.53 0 0 1 1.427-1.114c.576-.292 1.12-.453 1.632-.481.015.14.021.28.021.42z"
+                ></path>
+              </svg>
+            </div>
+            <div class="text-box">Inicia sesión con Apple</div>
+          </div></a>
+        </div>
+        <div class="box1" id="back-img-login">
+          <!-- <img src="assets/img/sagrada-familia.jpg" alt="sagrada-familia" /> -->
+        </div>
+      </section>
+      <!-- FIN FORMULARIO -->
+    </main>
+    <!-- COMIENZO DEL FOOTER - SEBA -->
+    <footer>
+      <div class="container-fluid foot-contain">
+        <div class="row py-3 justify-content-center">
+          <div
+            class="
+              col-12 col-lg-3
+              foot-box
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <img
+              src="assets/img/logo-schaffen.jpg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            <h3 class="foot-al">AVISO LEGAL</h3>
+            <p class="foot-text">Schaffen es una marca registrada</p>
+            <p class="foot-text">DISEÑO: SLC</p>
+          </div>
+          <div
+            class="
+              col-12 col-lg-3
+              foot-box
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <h3 class="foot-al">¿Quiénes somos en las redes?</h3>
+            <!-- SIMBOLO IG -->
+            <a href="https://www.instagram.com/?hl=es" class="foot-links">
+              <div class="rounded-pill bg-light px-2 my-1 foot-links">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"
+                  ></path>
+                  <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                  <path
+                    d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"
+                  ></path>
+                </svg>
+                <span class="net-text">Instagram</span>
+              </div>
+            </a>
+            <!-- SIMBOLO FACE -->
+            <a href="https://www.facebook.com/" class="foot-links">
+              <div class="rounded-pill bg-light px-2 my-1 foot-links">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"
+                  ></path>
+                </svg>
+                <span class="net-text">Facebook</span>
+              </div>
+            </a>
+            <!-- SIMBOLO EMAIL -->
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox"
+              class="foot-links"
+            >
+              <div class="rounded-pill bg-light px-2 my-1 foot-links">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#000"
+                    points="1.4,6.5 10,11 18.6,6.5"
+                  ></polyline>
+                  <path
+                    d="M 1,4 1,16 19,16 19,4 1,4 Z M 18,15 2,15 2,5 18,5 18,15 Z"
+                  ></path>
+                </svg>
+                <span class="net-text">E-mail</span>
+              </div>
+            </a>
+            <!-- FIN DE SIMBOLOS -->
+          </div>
+          <div
+            class="
+              col-12 col-lg-3
+              foot-box
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <p class="foot-al">
+              "BELIEVE AND CREATE PSHYSICAL STRUCTURES IN THIS PHYSICAL WORLD
+              FOR EVER AND EVER"
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+    <!-- JS DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

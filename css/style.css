@@ -80,6 +80,9 @@
     transform: scale(1.05);
     transition: 300ms;
 }
+.card{
+    z-index: 2;
+}
 .card-body{
     height: 150px;
 }
@@ -97,6 +100,7 @@
     color: white;
     animation: stars 3s linear infinite;
     position: absolute;
+    z-index: 1;
 }
 @keyframes stars{
     0%{
@@ -204,4 +208,7 @@
     .video-box{
         display: none;
     }
+}
+.video-box{
+    z-index: 3;
 }
