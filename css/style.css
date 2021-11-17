@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .nav-home{
     background: #000000;
     background: -moz-linear-gradient(top, #000000 0%, #87878A 0%, #FFFFFF 100%);
@@ -200,6 +204,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+    width: 100%;
+    position: relative;
 }
 @media screen and (max-width: 767px){
     .box-col-22{
@@ -211,4 +217,7 @@
 }
 .video-box{
     z-index: 3;
+    position: absolute;
+    right: -15%;
+    top: 100%;
 }

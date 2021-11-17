@@ -1,0 +1,19 @@
+.forgot-form{
+    width: 75%;
+}
+@media screen and (max-width: 576px) {
+    .forgot-form{
+        width: 100%;
+    }
+}
+.back-btn{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.back-btn-2{
+    padding: 0;
+    width: 80px;
+}

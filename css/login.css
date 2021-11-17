@@ -62,3 +62,17 @@
     background-size: cover;
     background-position: center;
 }
+.forgot-link{
+    text-decoration: none;
+}
+@media screen and (max-width: 767px){
+    #back-img-login{
+        display: none;
+    }
+    .login-form{
+        justify-content: center;
+    }
+    .box1{
+        height: auto;
+    }
+}
