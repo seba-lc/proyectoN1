@@ -1,0 +1,127 @@
+.body-contact{
+    background-image: url(../assets/img/oficinas.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    /* position: relative; */
+    z-index: -1;
+}
+/* .bg-wait{
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+} */
+.ofi-img{
+    z-index: 0;
+}
+.contact-box{
+    position: relative;
+}
+.contact{
+    width: 80vw;
+    background-color: #6277AF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border-radius: 50px;
+}
+.fas{
+    color: white;
+    transform: scale(2);
+}
+.fal{
+    color: white;
+    transform: scale(2);
+}
+h1{
+    text-align: center;
+    font-size: calc(1.325rem + .9vw);
+}
+main{
+    font-family: oswald;
+    z-index: -5;
+    
+}
+.datos{
+    width: 50%;
+}
+.back-map{
+    background-image: url(../assets/img/oficinas.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    z-index: -1;
+    padding: 0;
+    font-family: lora;
+}
+.map-box{
+    z-index: 4;
+    position: relative;
+}
+.map{
+    z-index: 10;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    border-radius: 30px;
+}
+.txt-box{
+    z-index: 10;
+}
+.contact-box-2{
+    z-index: 10;
+}
+.input-box{
+    margin: 15px;
+    padding: 8px;
+    border: none;
+    border-bottom: solid black 1px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+.input-box:focus{
+    background-color: white;
+}
+.txt-box-2{
+    margin-top: 15px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 8px;
+}
+.txt-box-2:focus{
+    background-color: white;
+}
+.btn-send{
+    border-radius: 8px;
+    background-color: #6277AF;
+    color: white;
+    font-weight: 500;
+    border: solid black 1px;
+}
+.btn-send:hover{
+    transform: scale(1.1);  
+    border: solid black 2px;
+}
+@media screen and (max-width: 576px) {
+    .map-box iframe{
+        width: 375px;
+        height: 375px;
+    }    
+}
+.contact-link{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+.contact-link:hover{
+    color: black;
+}
