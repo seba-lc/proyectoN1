@@ -221,3 +221,18 @@
     right: -15%;
     top: 100%;
 }
+.a-404{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.a-404:hover{
+    color: black;
+}
+.btn-search{
+    padding: 0;
+}

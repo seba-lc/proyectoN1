@@ -24,7 +24,7 @@
 }
 .media-cont{
     display: flex;
-    width: 900px;
+    width: 90vw;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -59,3 +59,9 @@
     align-self: flex-start;
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .media-cont iframe{
+        width: 100%;
+    }
+}
+
